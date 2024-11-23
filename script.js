@@ -44,15 +44,9 @@ function setPosition(element,position){
 }
 
 function drawFood(){
-    if(p%4==0){
-        const bonusElement=createGameElement('div','bonus');
-        setPosition(bonusElement,food);
-        board.appendChild(bonusElement);
-    }else{
     const foodElement=createGameElement('div','food');
     setPosition(foodElement,food);
     board.appendChild(foodElement);
-    }
 }
 
 function generateFood(){
